@@ -308,7 +308,7 @@ def get_throttling_function_code(js: str) -> str:
         The name of the function used to compute the throttling parameter.
     """
     # Begin by extracting the correct function name
-    transform_plan_raw = find_object_from_startpoint(raw_code, match.span()[1] - 1)
+    transform_plan_raw = js
 
     # Identify where the function is defined
     pattern_start = r"%s=function\(\w\)" % name
