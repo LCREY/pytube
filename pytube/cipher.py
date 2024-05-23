@@ -409,7 +409,6 @@ def get_throttling_plan(js: str):
     match = plan_regex.search(raw_code)
 
     name = "hha"
-    name = re.escape(get_throttling_function_name(js))
 
     # Steps are either c[x](c[y]) or c[x](c[y],c[z])
     step_start = r"c\[(\d+)\]\(c\[(\d+)\](,c(\[(\d+)\]))?\)"
